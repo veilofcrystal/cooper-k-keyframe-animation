@@ -60,35 +60,26 @@ body {
 
 .text1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
     color: white;
     position: absolute;
     z-index: 1;
     top: 111px;
-    width: 333;
+    width: 666px;
     height: 222px;
-    font-size: 55px;
-    animation: first 8s ease-in-out forwards;
+    font-size: 44px;
+    animation: first 9s ease-in-out forwards;
 }
 
 @keyframes first {
-    0%{
-        right:111px;
-        opacity: 0;
-    }
 
-    25% { right:111px;
-        opacity: 0.25;
-        }
+    0%{ left: 444px;opacity: 0;}
 
-    50% {
-        right: 111px;
-        opacity: 1;
-    }
+    25% { left: 444px;opacity: 0.25; }
 
-    100% {
-        right:111px;
-        rotate: 11deg;
-        opacity: 0;}
+    50% { left: 444px; opacity: 1; }
+
+    100% { left: 444px; transform: rotate(11deg); opacity: 0;}
 
 }
 
@@ -106,32 +97,17 @@ body {
     animation: second 8s ease-in-out 7s forwards;
 }
 
-@keyframes second {
-    0%{
-        top:-111px;
-       left:222px;
-    }
+@keyframes second { 
+    
+    0%{ top:-111px; left:222px;}
 
-    25%{
-        top: 45px;
+    25%{ top: 45px;}
 
-    }
+    50% { top: 45px;}
 
-    50% {
-        top: 45px;
-    }
+    75%{ top:45px;font-size: 33px;}
 
-    75%{
-        top:45px;
-        font-size: 33px;
-    }
-
-
-
-    100%{
-        left: -222px;
-        opacity: 0;
-    }
+    100%{ left: -222px; opacity: 0;}
 }
 
 
@@ -145,33 +121,19 @@ body {
     width: 2222px;
     height: 222px;
     font-size: 33px;
-    animation: third 20s ease-in-out 9.5s forwards;
+    animation: third 13s ease-in-out 10s forwards;
   
 }
 
 
 
 @keyframes third {
-  0%{
-    transform: scale(0.95);
-    left: 200px;
-    top: 600px;
-  }
 
-  50% {
-    transform: scale(1);
-    left: 200px;
-    top: 200px;
-    font-size: 66px ;
-  }
+  0%{transform: scale(0.95); left: 200px; top: 600px;}
 
-  100% {
-    rotate: -30deg;
-    left: 200px;
-    top: 600px;
-    
+  50% {transform: scale(1);left: 200px; top: 200px; font-size: 66px ;}
 
-  }
+  100% {transform: rotate(30deg);left: 200px; top: 600px; opacity: 0;}
   }
 
   .text4 {
@@ -185,27 +147,15 @@ body {
     width: 333;
     height: 222px;
     font-size: 55px;
-    animation: fourth 33s ease-in-out 11s forwards;
+    animation: fourth 33s ease-in-out 12s forwards;
 }
 
 @keyframes fourth {
-    0%{
-        scale: 0%;
-        opacity: 0;
-    }
+    0%{scale: 0%;opacity: 0;}
 
-    25% { scale: 20%;
-        opacity: 0.15;
-        }
+    25% { scale: 20%; opacity: 0.15;}
 
-    50% {
-        scale: 50%;
-        opacity: 1;
-    }
+    50% {scale: 50%; opacity: 1;}
 
-    100% {
-        
-        scale: 100%;
-        opacity: 0;}
-
+    100% {scale: 100%; opacity: 0;}
 }
